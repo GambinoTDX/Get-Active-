@@ -1,0 +1,74 @@
+:root {
+    --switch-width: 50px;
+    --switch-height: calc(var(--switch-width) / 2);
+    --switch-border-radius: 100vmax;
+    --switch-bg-color: #ddd;
+    --switch-bg-active-color: black;
+    --switch-dot-color: white;
+    --switch-dot-color-inactive: #white;
+    --switch-dot-scale-factor: 1.1;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+  
+    min-height: 100vh;
+  }
+  
+  .switch {
+    display: inline-block;
+    cursor: pointer;
+    position:absolute;
+    Top:50px;
+    Left:50px;
+
+    
+  }
+  
+  .switch__input {
+    display: none;
+  }
+  
+  .switch__input:checked ~ .switch__control {
+    background-color: var(--switch-bg-active-color);
+  }
+  
+  .switch__input:checked ~ .switch__control::after {
+    transform: translateX(100%) scale(var(--switch-dot-scale-factor));
+  }
+  
+  .switch__input:not(:checked) ~ .switch__control::after {
+    background-color: var(--switch-dot-color-inactive);
+  }
+  
+  .switch__control {
+    position: relative;
+  
+    width: var(--switch-width);
+    height: var(--switch-height);
+  
+    background-color: var(--switch-bg-color);
+  
+    border-radius: var(--switch-border-radius);
+  
+    transition: background-color 250ms ease-out;
+  }
+  
+  .switch__control::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--switch-height);
+    height: 100%;
+    background-color: var(--switch-dot-color);
+    border-radius: var(--switch-border-radius);
+  
+    box-shadow: 0 0 5px white;
+  
+    transform: scale(var(--switch-dot-scale-factor));
+  
+    transition: transform 250ms ease-out;
+  }
+  
