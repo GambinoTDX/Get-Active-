@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "styles.css">
+    <link rel="stylesheet" href = "btnStyle.css">
+    <link rel="stylesheet" href = "checkboxes.css">
+    <title>getActive.us</title>
+</head>
+<body class = "body-1" id="bodytype">
+    <header>
+        <h1 class = "header-h1" id="header">Get Active!</h1>
+    </header>
+
+
+    
+    <main>
+        <h2 class="main-vehicleChoose" id="vehicle">Choose your vehicle!</h2>
+        <div class="vehicle-check" id="vicCheck">
+        <input class = "bruh"  type = "checkbox" id="checkboxFoot">
+        <label class = "check1" class="check1" for="checkboxFoot" id="check12">Foot</label>
+        <input  class = "bruh" type = "checkbox" id="checkboxBicycle">
+        <label class="check1" for="checkboxBicycle" id="check123">Bicycle</label>
+        <input class = "bruh" type = "checkbox" id="checkboxCar">
+        <label class="check1" for="checkboxCar" id="check1234">Car</label>
+        </div>
+
+        <h2 class="main-activityChoose" id="activity">Choose your activity type!</h2>
+        <div class="checkActivity" id="actCheck">
+            <input class = "bruh" type="checkbox" id="checkboxScenic">
+            <label for = checkboxScenic>Scenic</label>
+            <input class = "bruh" type="checkbox" id="checkboxRelaxing">
+            <label for = checkboxRelaxing>Relaxing</label>
+            <input class = "bruh" type="checkbox" id="checkboxAdventurous">
+            <label for = checkboxAdventurous>Adventurous</label>
+            <input class = "bruh" type="checkbox" id="checkboxChallenging">
+            <label for = checkboxChallenging>Challenging</label>
+        </div>
+        <div>
+            <button class="btn" id="btn">
+                Generate Challenge
+            </button>
+            <label class="switch" >
+                <input class="switch__input" type="checkbox" onclick="
+                    const element = document.getElementById('bodytype');
+                    const bgColor = window.getComputedStyle(element).backgroundColor;
+                    
+                    
+
+                    
+                    if (bgColor === 'rgb(0, 0, 0)') {
+  element.style.backgroundColor = 'white';
+  const element2 = document.getElementById('header');
+  element2.style.backgroundColor = 'black';
+  element2.style.color = 'white';
+  const element3 = document.getElementById('vehicle');
+  element3.style.backgroundColor = 'black';
+  element3.style.color = 'white';
+  const element4 = document.getElementById('activity');
+  element4.style.backgroundColor = 'black';
+  element4.style.color = 'white';
+  const element5 = document.getElementById('outBox');
+  element5.style.backgroundColor = 'black';
+  element5.style.color = 'white';
+  const element6 = document.getElementById('vicCheck');
+  element6.style.backgroundColor = 'black';
+  element6.style.color = 'white';
+  const element7 = document.getElementById('actCheck');
+  element7.style.backgroundColor = 'black';
+  element7.style.color = 'white';
+  const element8 = document.getElementById('check12');
+  element8.style.backgroundColor = 'black';
+  element8.style.color = 'white';
+  const element9 = document.getElementById('check123');
+  element9.style.backgroundColor = 'black';
+  element9.style.color = 'white';
+  const element10 = document.getElementById('check1234');
+  element10.style.backgroundColor = 'black';
+  element10.style.color = 'white';
+  const element11 = document.getElementById('because');
+  element11.style.backgroundColor = 'black';
+  element11.style.color = 'white';
+} else {
+    element.style.backgroundColor = 'black';
+    const element2 = document.getElementById('header');
+  element2.style.backgroundColor = 'white';
+  element2.style.color = 'black';
+  const element3 = document.getElementById('vehicle');
+  element3.style.backgroundColor = 'white';
+  element3.style.color = 'black';
+  const element4 = document.getElementById('activity');
+  element4.style.backgroundColor = 'white';
+  element4.style.color = 'black';
+  const element5 = document.getElementById('outBox');
+  element5.style.backgroundColor = 'white';
+  element5.style.color = 'black';
+  const element6 = document.getElementById('vicCheck');
+  element6.style.backgroundColor = 'white';
+  element6.style.color = 'black';
+  const element7 = document.getElementById('actCheck');
+  element7.style.backgroundColor = 'white';
+  element7.style.color = 'black';
+  const element8 = document.getElementById('check12');
+  element8.style.backgroundColor = 'white';
+  element8.style.color = 'black';
+  const element9 = document.getElementById('check123');
+  element9.style.backgroundColor = 'white';
+  element9.style.color = 'black';
+  const element10 = document.getElementById('check1234');
+  element10.style.backgroundColor = 'white';
+  element10.style.color = 'black';
+  const element11 = document.getElementById('because');
+  element11.style.backgroundColor = 'white';
+  element11.style.color = 'black';
+}"/>
+                <div class="switch__control"></div>
+                
+              </label>
+
+        </div>
+        <!--
+        Button to generate challenge
+        -->
+        <!-- 
+        Output box
+        -->
+        <div class="gen-output" id="outBox">
+            <p  id="output">This is where your challenges will appear!</p>
+        </div>
+        
+
+        
+    </main>
+
+
+    <footer>
+        @Copyright gh{}st 2025
+    </footer>
+    <script src="HELL.js"></script>
+</body>
+</html>
